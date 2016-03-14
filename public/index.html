@@ -53,9 +53,9 @@
           return(
             <div className="comment">
               <h2 className="commentAuthor">
-                {this.props.children}
+                {this.props.author}
               </h2>
-              {this.props.author}
+              {marked(this.props.children.toString())}
             </div>
           )
         }
